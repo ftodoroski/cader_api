@@ -71,13 +71,13 @@ test:
 # On Heroku and other platform providers, you may have a full connection URL
 # available as an environment variable. For example:
 #
-#   DATABASE_URL="postgres://myuser:mypass@localhost/somedatabase"
+DATABASE_URL: "postgres://wvsmgjpezdglsz:f46fc4f2b15f677a89347e16c30363cb57ad91910a7a0b9a5d0dadbd65c5bedd@ec2-52-202-146-43.compute-1.amazonaws.com:5432/daioqd0rdmehrk"
 #
 # You can use this database configuration with:
 #
-#   production:
-#     url: <%= ENV['DATABASE_URL'] %>
-#
+production:
+  url: <%= ENV['DATABASE_URL'] %>
+
 production:
   <<: *default
   database: back_end_production
